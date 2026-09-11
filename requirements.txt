@@ -1,0 +1,10 @@
+# Runtime dependencies for the instrument control scripts.
+#   python -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+
+numpy
+matplotlib
+
+# Beamline control scripts under instrument_control/ also need pyepics
+# (pip install pyepics), but they only do anything on the beamline network
+# against a live EPICS IOC.
